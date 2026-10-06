@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - Website Kumpulan Film</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <p class="logo-small">MOVIE COLLECTION</p>
+            <h1>Programming WEB dengan HTML</h1>
+            <p>Website Kumpulan Film</p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="registrasi.html" class="active">Registrasi</a>
+        </div>
+    </nav>
+    <main class="page-container">
+        <section class="page-header">
+            <p>MOVIE MEMBERSHIP</p>
+            <h2>Registrasi Pelanggan</h2>
+            <span>
+                Daftarkan diri untuk memilih paket berlangganan.
+            </span>
+        </section>
+        <section class="register-section">
+            <div class="register-box">
+                <h2>Form Registrasi</h2>
+                <p class="register-description">
+                    Silakan lengkapi data berikut untuk melakukan
+                    registrasi pelanggan.
+                </p>
+                <form>
+                    <label>Nama Lengkap</label>
+                    <input type="text"
+                           name="nama"
+                           placeholder="Masukkan nama lengkap"
+                           required>
+                    <label>Email</label>
+                    <input type="email"
+                           name="email"
+                           placeholder="Masukkan email"
+                           required>
+                    <label>Password</label>
+                    <input type="password"
+                           name="password"
+                           placeholder="Masukkan password"
+                           required>
+                    <label>Paket Berlangganan</label>
+                    <select name="paket" required>
+                        <option value="">
+                            -- Pilih Paket --
+                        </option>
+                        <option value="basic">
+                            Basic
+                        </option>
+                        <option value="standar">
+                            Standar
+                        </option>
+                        <option value="premium">
+                            Premium
+                        </option>
+                    </select>
+                    <label>Metode Pembayaran</label>
+                    <div class="payment-option">
+                        <label class="radio-option">
+                            <input type="radio"
+                                   name="pembayaran"
+                                   value="kartu"
+                                   required>
+                            <span>Kartu Debit/Kredit</span>
+                            <img src="visa.jpg"
+                                 alt="Visa">
+                            <img src="mastercard.jpg"
+                                 alt="Mastercard">
+                            <img src="mandiri.jpg"
+                                 alt="Mandiri">
+                            <img src="bca.jpg"
+                                 alt="BCA">
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio"
+                                   name="pembayaran"
+                                   value="dompet">
+                            <span>Dompet Digital</span>
+                            <img src="dana.jpg"
+                                 alt="DANA">
+                            <img src="ovo.jpg"
+                                 alt="OVO">
+                            <img src="gopay.jpg"
+                                 alt="GoPay">
+                        </label>
+                    </div>
+                    <label>Nomor Kartu</label>
+                    <input type="text"
+                           name="nomor_kartu"
+                           placeholder="Masukkan nomor kartu">
+                    <button type="submit">
+                        Daftar Sekarang
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Website Kumpulan Film</h3>
+        <p>
+            Temukan informasi film favoritmu dengan mudah.
+        </p>
+        <hr>
+        <p>
+            &copy; 2026 Website Kumpulan Film.
+            Informasi ini dikelola oleh Admin Website.
+        </p>
+    </footer>
+</body>
+</html>
